@@ -1,20 +1,35 @@
 
 
 .Contenedor-Header{
-    width: 100%;
+
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 25px;
+
+
+   position: fixed;
+   left: 0;
+   top: 0;
 }
 
 .Boton-Header{
     display: flex;
     align-items: center;
+    width: 70px;
 } 
 
-.Boton-Header .Icono-Header{
+.AddWidth{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.null{
+    width: 10%;
+}
+
+.Icono-Header{
     border: 2px solid #fff;
   
     border-radius: 50vmax;
@@ -25,7 +40,7 @@
     
 }
 
-.Boton-Header .Icono-Header img{
+.Icono-Header img{
     width: 30px;
     height: 30px;
     

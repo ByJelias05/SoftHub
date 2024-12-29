@@ -1,0 +1,28 @@
+
+.Contenedor-Explore{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+.Logo-Publicaciones{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    justify-content: center;
+    margin-block: 25px;
+}
+.Logo{
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+}
+.Logo img{
+    width: 186px;
+    height: 74px;
+}
+
