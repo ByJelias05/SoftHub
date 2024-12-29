@@ -1,0 +1,100 @@
+
+
+.Contenedor-Header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.Boton-Header{
+    display: flex;
+    align-items: center;
+} 
+
+.Boton-Header .Icono-Header{
+    border: 2px solid #fff;
+  
+    border-radius: 50vmax;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Boton-Header .Icono-Header img{
+    width: 30px;
+    height: 30px;
+    
+} 
+
+.Img-Perfil{
+
+    width: 50px;
+    height: 3000px;
+   
+    background: #393570;
+    padding: 10px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7px;
+}
+
+.Icono-Header .Img{
+   
+    background: #393570;
+    padding: 10px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 7px;
+}
+.Icono-Header .Img:hover img{
+    transform: scale(1.5);
+    transition: 300ms ease-in;
+}
+
+.Icono-Header .Img-Load{
+   
+    background: #fff;
+    padding: 17px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 0px;
+}
+.Icono-Header .Img-Load img{
+   transform: scale(1.5);
+   transition: 300ms ease-in;
+}
+
+.Icono-Header .Img .peril{
+    border-radius: 50%;
+}
+
+.Titulo{
+    display: flex;
+    margin-left: 25px;
+}
+.Titulo .Flecha{
+    width: 50px;
+}
+.Titulo h1{
+    margin-left: 25px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    color: #fff;
+}
