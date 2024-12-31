@@ -1,0 +1,36 @@
+
+.Contenedor-Tendencias{
+
+    width: 80%;
+    margin: 0 auto;
+    background: #333A77;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+    
+    padding: 5px;
+    border-radius: 5px;
+
+    font-family: 'Segoe UI';
+    
+}
+
+.Contenedor-Tendencias h1{
+    color: #fff;
+}
+
+.Lista-Tendencias h3{
+    margin-top: 5px;
+  
+    color: #707070;
+    cursor: pointer;
+}
+.Lista-Tendencias h3:hover{
+    text-decoration: underline #fff;
+}
+
+.Lista-Tendencias h3 span{
+    color: #fff;
+    margin-right: 10px;
+}

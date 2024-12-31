@@ -1,0 +1,43 @@
+
+.Contenedor-Programadores{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Segoe UI';
+    justify-content: space-between;
+}
+
+.Informacion-Programador{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Informacion-Programador img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.Nombre-Cargo h2{
+    font-size: 15px;
+}
+
+.Nombre-Cargo .Nombre{
+    color: #B1ABAB;
+}
+.Nombre-Cargo .Cargo{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Contenedor-Programadores .Boton-Seguir{
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    color: black;
+}

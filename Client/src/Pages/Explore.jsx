@@ -1,4 +1,7 @@
+import { Buscador } from "../Components/Buscador"
 import { Publicacion } from "../Components/Publicacion"
+import { Sugerencia } from "../Components/Sugerencia"
+import { Tendencias } from "../Components/Tendencias"
 import "../Css/Explore.css"
 import Logo from "../Images/Logo.png"
 
@@ -15,14 +18,14 @@ export function Explore(){
                 </div>
             </div>
             <div className="Buscar-Devs-Tendencias">
-                <div>
-                    
+                <div className="Buscador">
+                    <Buscador></Buscador>
                 </div>
-                <div>
-                    
+                <div className="Devs-Recomendaciones">
+                    <Sugerencia></Sugerencia>
                 </div>
-                <div>
-                    
+                <div className="Tendencias">
+                    <Tendencias></Tendencias>
                 </div>
             </div>
         </div>
