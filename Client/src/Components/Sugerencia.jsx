@@ -10,6 +10,10 @@ export function Sugerencia(){
                  <Programador></Programador>
                  <Programador></Programador>
                  <Programador></Programador>
+                 <Programador></Programador>
+                 <Programador></Programador>
+                 <Programador></Programador>
+                 <Programador></Programador>
             </div>
         </div>
     )

@@ -1,10 +1,14 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 import "../Css/Header.css"
 import {ArrayIcons} from "../Data/ArrayIcons"
 
 import Flecha from "../Icons/Flecha.png"
+import { Paginas } from "../App/App"
+
 
 export function Header(){
+
+    const [Pagina, setPagina] = useContext(Paginas)
 
     const [Boton, setBoton] = useState("Explore");
     const [BotonOver, setBotonOver] = useState(Boton);
@@ -20,10 +24,12 @@ export function Header(){
                 ArrayIcons.map(items => (
                     BotonOver == items.Titulo ?
                     <div className={`AddWidth`}  
-                    onClick={() => {setBoton(items.Titulo)}}
+                    onClick={() => {
+                        setBoton(items.Titulo)
+                        setPagina(items.Titulo)
+                    }}
                     onMouseOver={() => {
-                        setBotonOver(items.Titulo)
-                        
+                    setBotonOver(items.Titulo)
                     }}
                     
                     >
