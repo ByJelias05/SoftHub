@@ -3,6 +3,7 @@ import '../Css/App.css'
 import { Explore } from '../Pages/Explore'
 import {createContext, useState} from "react"
 import { Search } from '../Pages/Search';
+import { Messages } from '../Pages/Messages';
 
 export const Paginas = createContext();
 
@@ -12,7 +13,8 @@ function App() {
 
   const ObjPaginas = {
     Explore: Explore,
-    Search: Search
+    Search: Search,
+    Messages: Messages
   }
 
   const PaginaActual = ObjPaginas[Pagina];

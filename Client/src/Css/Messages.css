@@ -1,0 +1,105 @@
+.Contenedor-Messages{
+    width: 100%;
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.Contenedor-Messages .Logo-Amigos{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    margin-block: 25px;
+}
+
+.Contenedor-Amigos{
+    position: fixed;
+    overflow-y: scroll;
+    height: 70%;
+    width: 33%;
+    margin: 25px auto;
+    border: 2px solid #fff;
+    min-height: 50%;
+    padding: 25px;
+
+    background: transparent;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+
+    border-radius: 5px;
+}
+
+
+.Conversacion-Messages{
+    position: fixed;
+    right: 0;
+    width: 30%;
+    margin: 25px;
+    height: 95%;
+    min-height: 95%;
+
+    background: transparent;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+
+.Perfil-Messages{
+    height: 55px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 25px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.Perfil-Messages .Nombre h1{
+    font-family: 'Segoe UI';
+    color: #656AA1;
+    font-size: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.Caja-Conversacion{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+  
+}
+
+.Escribir-Mensaje{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.Escribir-Mensaje input{
+    width: 70%;
+    height: 50px;
+    padding-left: 10px;
+    margin-left: 10px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    color: #fff;
+}
+
+.Escribir-Mensaje button{
+    background: transparent;
+    border: none;
+}
+.Escribir-Mensaje button img{
+    width: 50px;
+    cursor: pointer;
+}
