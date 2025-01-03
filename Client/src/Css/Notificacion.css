@@ -1,0 +1,36 @@
+.Contenedor-Notificacion{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Segoe UI';
+    margin-top: 15px;
+}
+
+.Foto-Informacion-Noticaciones{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Foto-Informacion-Noticaciones img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100vmax;
+}
+
+.Nombre-Accion h1{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+.Nombre-Accion span{
+    color: #948f8f;
+    font-weight: bold;
+}
+
+.Icono-Accion{
+    width: 40px;
+    height: 40px;
+}

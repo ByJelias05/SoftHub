@@ -4,6 +4,7 @@ import { Explore } from '../Pages/Explore'
 import {createContext, useState} from "react"
 import { Search } from '../Pages/Search';
 import { Messages } from '../Pages/Messages';
+import { Notify } from '../Pages/Notify';
 
 export const Paginas = createContext();
 
@@ -14,7 +15,8 @@ function App() {
   const ObjPaginas = {
     Explore: Explore,
     Search: Search,
-    Messages: Messages
+    Messages: Messages,
+    Notify: Notify
   }
 
   const PaginaActual = ObjPaginas[Pagina];

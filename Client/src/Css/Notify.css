@@ -1,0 +1,39 @@
+.Contenedor-Notify{
+    width: 100%;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Notificaciones{
+    
+    width: 30%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Lista-Notificaciones{
+    width: 80%;
+    height: 50%;
+    background: transparent;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+    border-radius: 10px;
+}
+
+.Lista-Notificaciones .Titulo{
+    font-family: 'Segoe UI';
+    width: 70%;
+    margin: 20px auto;
+    text-transform: uppercase;
+    color: #fff;
+}
