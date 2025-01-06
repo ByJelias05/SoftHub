@@ -5,6 +5,7 @@ import {createContext, useState} from "react"
 import { Search } from '../Pages/Search';
 import { Messages } from '../Pages/Messages';
 import { Notify } from '../Pages/Notify';
+import { MyPanel } from '../Pages/MyPanel';
 
 export const Paginas = createContext();
 
@@ -16,10 +17,11 @@ function App() {
     Explore: Explore,
     Search: Search,
     Messages: Messages,
-    Notify: Notify
+    Notify: Notify,
+    Mypanel: MyPanel
   }
 
-  const PaginaActual = ObjPaginas[Pagina];
+  const PaginaActual = ObjPaginas[Pagina.includes(" ") ? Pagina.replace(" ","") : Pagina];
 
   return (
     <>

@@ -1,0 +1,32 @@
+.Contenedor-Items{
+    margin-top: 25px;
+    width: 100%;
+    padding: 0px 25px 25px 25px;
+    position: relative;
+}
+.Contenedor-Items::before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 3px;
+    background:  rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    transform: translateX(20%);
+
+}
+
+.Fecha-Rama{
+    display: flex;
+    justify-content: space-between;
+}
+
+.AcercaDe{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Fecha-Rama .Rama{
+ color: yellow;
+ text-transform: none;
+}

@@ -1,0 +1,107 @@
+.Contenedor-Branch{
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.Cabezera-Branch{
+    text-align: center;
+}
+
+.Cabezera-Branch h3{
+    color: #fff;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.Cabezera-Branch h2{
+    color: #fff;
+    font-size: 50px;
+}
+
+.Contenedor-Linea-Branch{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Linea{
+    width: 5px;
+    height: 90%;
+    display: flex;
+    background: #fff;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .Requirements-Analysis{
+    background: green;
+    width: 25px;
+    height: 20px;
+}
+.Software-Design{
+    background: blue;
+    width: 25px;
+    height: 20px;
+} */
+ .Linea div{
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    border-radius: 100vmax;
+    position: relative;
+
+    font-family:  'Segoe UI';
+    font-size: 9px;
+
+} 
+.Linea .Complete{
+    background: #00FF44;
+}
+.Linea .InProgress{
+    background: #fbff00;
+}
+.Linea .NotStarted{
+    background: #ff0000;
+}
+
+.Derecha h1{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #201C57;
+}
+.Izquierda h1{
+    position: absolute;
+    left: 50px;
+    top: 0;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #201C57;
+}
+.Derecha span{
+    position: absolute;
+    left: 50px;
+    top: 0;
+    font-size: 15px;
+    color: #B1ABAB;
+    text-transform: uppercase;
+}
+.Izquierda span{
+    position: absolute;
+    right: 50px;
+    top: 0;
+    font-size: 15px;
+    color: #B1ABAB;
+    text-transform: uppercase;
+}

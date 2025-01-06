@@ -1,0 +1,79 @@
+.Contenedor-MyPanel{
+    width: 100%;
+    min-height: 100vh;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-family: 'Segoe UI';
+}
+
+.Logo-Proyectos{
+    margin-block: 25px;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+}
+
+.Elejir-Informacion-Proyecto .Elejir-Proyecto h3{
+    color: #B1ABAB;
+    text-transform: uppercase;
+    margin-block: 5px;
+}
+
+.Elejir-Informacion-Proyecto .Elejir-Proyecto select{
+    width: 100%;
+    height: 50px;
+
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+
+    outline: none;
+
+    color: #fff;
+    font-size: 25px;
+    padding-inline: 5px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.Historial-Proyecto{
+    margin-top: 50px;
+    width: 100%;
+    height: 70%;
+
+   
+}
+
+.Lista-Acciones{
+    border-radius: 5px;
+    background: transparent;
+    border: 2px solid rgba(57, 53, 112, 0.1);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.4),
+    -6px -6px 15px rgba(0, 0, 0, 0.2)
+    ;
+    width: 100%;
+    height: 100%;
+}
+
+.Historial-Proyecto h3{
+    margin-block: 5px;
+    color: #B1ABAB;
+    text-transform: uppercase;
+}
+
+.Historial-Proyecto h3 span{
+    margin-block: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.Fecha-Historial{
+    text-align: center;
+    margin-block: 10px;
+    color: #B1ABAB;
+}
