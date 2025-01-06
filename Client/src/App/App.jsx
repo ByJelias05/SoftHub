@@ -6,6 +6,7 @@ import { Search } from '../Pages/Search';
 import { Messages } from '../Pages/Messages';
 import { Notify } from '../Pages/Notify';
 import { MyPanel } from '../Pages/MyPanel';
+import { NewPost } from '../Pages/NewPost';
 
 export const Paginas = createContext();
 
@@ -18,7 +19,8 @@ function App() {
     Search: Search,
     Messages: Messages,
     Notify: Notify,
-    Mypanel: MyPanel
+    Mypanel: MyPanel,
+    NewPost: NewPost
   }
 
   const PaginaActual = ObjPaginas[Pagina.includes(" ") ? Pagina.replace(" ","") : Pagina];
