@@ -1,0 +1,15 @@
+.Contenedor-Imagenes_Propuestas{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+
+}
+
+img{
+    
+    width: 200px;
+}

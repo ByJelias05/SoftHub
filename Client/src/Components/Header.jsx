@@ -49,7 +49,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
 
                                 :
@@ -61,7 +61,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
                                    
                             }
@@ -77,7 +77,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
 
                                 :
@@ -89,7 +89,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
                                    
                             }
@@ -136,7 +136,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="perfil" src={items.Icon} alt="" />
                                 </div>
 
                                 :
@@ -148,7 +148,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
                                    
                             }
@@ -164,7 +164,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
 
                                 :
@@ -176,7 +176,7 @@ export function Header(){
                                 :
                                     
                                 <div className="Img">
-                                    <img className="peril" src={items.Icon} alt="" />
+                                    <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
                                    
                             }

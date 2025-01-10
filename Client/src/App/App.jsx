@@ -7,6 +7,7 @@ import { Messages } from '../Pages/Messages';
 import { Notify } from '../Pages/Notify';
 import { MyPanel } from '../Pages/MyPanel';
 import { NewPost } from '../Pages/NewPost';
+import { Activities } from '../Pages/Activities';
 
 export const Paginas = createContext();
 
@@ -20,7 +21,8 @@ function App() {
     Messages: Messages,
     Notify: Notify,
     Mypanel: MyPanel,
-    NewPost: NewPost
+    NewPost: NewPost,
+    Activities: Activities
   }
 
   const PaginaActual = ObjPaginas[Pagina.includes(" ") ? Pagina.replace(" ","") : Pagina];

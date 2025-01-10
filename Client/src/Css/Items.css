@@ -30,3 +30,45 @@
  color: yellow;
  text-transform: none;
 }
+
+
+/* Propuestas */
+
+.Contenedor-Propuesta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    margin-block: 10px;
+}
+
+.Contenedor-Propuesta:hover{
+    background: #fff;
+    cursor: pointer;
+}
+
+.Contenedor-Propuesta .Foto-Nombre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.Contenedor-Propuesta .Foto-Nombre img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100vmax;
+}
+
+.Contenedor-Propuesta .Foto-Nombre h3{
+    color: #B1ABAB;
+}
+
+.Contenedor-Propuesta .Status{
+    margin-right: 10px;
+    color: #4f558a;
+}
