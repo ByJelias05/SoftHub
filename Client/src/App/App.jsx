@@ -8,6 +8,7 @@ import { Notify } from '../Pages/Notify';
 import { MyPanel } from '../Pages/MyPanel';
 import { NewPost } from '../Pages/NewPost';
 import { Activities } from '../Pages/Activities';
+import { Ruta } from '../Routes/Ruta';
 
 export const Paginas = createContext();
 
@@ -36,7 +37,7 @@ function App() {
                 <Header></Header>
             </div>
             <div className='Contenido-App'>
-                <PaginaActual></PaginaActual>
+                <Ruta/>
             </div>
         </div>
         </div>

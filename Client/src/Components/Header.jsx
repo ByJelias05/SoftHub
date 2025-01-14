@@ -1,9 +1,11 @@
-import { useState, useContext } from "react"
+import { useState, useContext, useEffect } from "react"
 import "../Css/Header.css"
 import {ArrayIcons} from "../Data/ArrayIcons"
 
 import Flecha from "../Icons/Flecha.png"
 import { Paginas } from "../App/App"
+
+import {Link} from "react-router-dom"
 
 
 export function Header(){
@@ -11,50 +13,66 @@ export function Header(){
     const [Pagina, setPagina] = useContext(Paginas)
 
     const [Boton, setBoton] = useState("Explore");
-    const [BotonOver, setBotonOver] = useState(Boton);
+    const [BotonOver, setBotonOver] = useState();
     const [WidthOver, setWidthOver] = useState(null);
 
-    const Leave = () =>{
-        setBotonOver(Boton)
+    const [Pasar, setPasar] = useState();
+
+    const Leave = (titulo) =>{
+        const direccion = titulo.includes(" ") ? titulo.replace(" ", "") : titulo
+        window.location = direccion
+        setBotonOver(direccion)
+
     }
+
+    const [Vista, setVista] = useState("")
+    useEffect(() =>{
+        setVista(location.pathname.replace("/",""))
+    
+    })
 
     return(
         <div className="Contenedor-Header" onPointerLeave={Leave} >
             {
                 ArrayIcons.map(items => (
-                    BotonOver == items.Titulo ?
-                    <div className={`AddWidth`}  
+                    BotonOver == items.Titu ?
+                    <a className={`AddWidth conte`}  
                     onClick={() => {
-                        setBoton(items.Titulo)
-                        setPagina(items.Titulo)
+                        setBoton(items.Titu)
+                        setPagina(items.Titu)
                     }}
                     onMouseOver={() => {
-                    setBotonOver(items.Titulo)
+                    setBotonOver(items.Titu)
                     }}
-                    
+                    onPointerLeave={() =>{
+                       
+                            setBotonOver("")
+                       
+                    }}
+                    href={items.Titu}
                     >
 
                         {/* Elimna los bordes del boton seleccionado */}
                         {
-                            BotonOver == items.Titulo ?
+                            Vista == items.Titu ?
                             <div className="Icono-Header" style={{border: 'none'}}>
 
                                 {/* Carga los iconos Loaded del boton seleccionado */}
                             {
-                                BotonOver == items.Titulo ?
-                                items.Titulo != "My Perfil" ?
-                                    <div className="Img-Load" >
+                                Vista == items.Titu ?
+                                Vista != "MyPerfil" ?
+                                    <div className="Img-Load" onClick={() => alert("ddo")}>
                                         <img src={items.IconLoad} alt="" />
                                     </div>
                                 :
                                     
-                                <div className="Img">
-                                    <img className="Perfil" src={items.Icon} alt="" />
+                                <div className="Img" onClick={() => {alert("sqw")}}>
+                                    <img className="Perfil"  src={items.Icon} alt="" />
                                 </div>
 
                                 :
 
-                                items.Titulo != "My Perfil" ?
+                                Vista != "My Perfil" ?
                                     <div className="Img">
                                         <img src={items.Icon} alt="" />
                                     </div>
@@ -69,9 +87,9 @@ export function Header(){
                         :
                         <div className="Icono-Header">
                             {
-                                BotonOver == items.Titulo ?
-                                items.Titulo != "My Perfil" ?
-                                    <div className="Img-Load">
+                                BotonOver == items.Titu ?
+                                items.Titu != "My Perfil" ?
+                                    <div className="Img-Load" >
                                         <img src={items.IconLoad} alt="" />
                                     </div>
                                 :
@@ -82,7 +100,7 @@ export function Header(){
 
                                 :
 
-                                items.Titulo != "My Perfil" ?
+                                items.Titu != "MyPerfil" ?
                                     <div className="Img">
                                         <img src={items.Icon} alt="" />
                                     </div>
@@ -97,25 +115,27 @@ export function Header(){
                         }
 
                         {/* Muestra la flecha y nombre del boton seleccionado */}
+                        
                         {
-                            BotonOver == items.Titulo ?
-                            <div className="Titulo">
+                            Vista == items.Titu ?
+                            <div className="Titulo"  onClick={() => alert("dd")}>
                                 <img className="Flecha" src={Flecha} alt="" />
                                 <h1>{items.Titulo}</h1>
                             </div>
                             :
                             null
                         }
-                    </div>
+                          
+                    </a>
 
 
                     :
 
 
-                    <div className={`Boton-Header`}  
-                    onClick={() => {setBoton(items.Titulo)}}
+                    <div className={`Boton-Header conte`}  
+                    onClick={() => {setBoton(items.Titu)}}
                     onMouseOver={() => {
-                        setBotonOver(items.Titulo)
+                        setBotonOver(items.Titu)
                         
                     }}
                     
@@ -123,25 +143,25 @@ export function Header(){
 
                         {/* Elimna los bordes del boton seleccionado */}
                         {
-                            BotonOver == items.Titulo ?
+                            Vista == items.Titu ?
                             <div className="Icono-Header" style={{border: 'none'}}>
 
                                 {/* Carga los iconos Loaded del boton seleccionado */}
                             {
-                                BotonOver == items.Titulo ?
-                                items.Titulo != "My Perfil" ?
+                                Vista == items.Titu ?
+                                Vista != "MyPerfil" ?
                                     <div className="Img-Load" >
                                         <img src={items.IconLoad} alt="" />
                                     </div>
                                 :
                                     
                                 <div className="Img">
-                                    <img className="perfil" src={items.Icon} alt="" />
+                                    <img className="perfil"  src={items.Icon} alt="" />
                                 </div>
 
                                 :
 
-                                items.Titulo != "My Perfil" ?
+                                items.Titu != "My Perfil" ?
                                     <div className="Img">
                                         <img src={items.Icon} alt="" />
                                     </div>
@@ -153,23 +173,25 @@ export function Header(){
                                    
                             }
                         </div>
+                        
                         :
-                        <div className="Icono-Header">
+
+                        <div className="Icono-Header db">
                             {
-                                BotonOver == items.Titulo ?
-                                items.Titulo != "My Perfil" ?
+                                Vista == items.Titu ?
+                                items.Titu != "MyPerfil" ?
                                     <div className="Img-Load">
                                         <img src={items.IconLoad} alt="" />
                                     </div>
                                 :
                                     
-                                <div className="Img">
+                                <div className="Img" >
                                     <img className="Perfil" src={items.Icon} alt="" />
                                 </div>
 
                                 :
 
-                                items.Titulo != "My Perfil" ?
+                                items.Titu != "MyPerfil" ?
                                     <div className="Img">
                                         <img src={items.Icon} alt="" />
                                     </div>
@@ -184,15 +206,17 @@ export function Header(){
                         }
 
                         {/* Muestra la flecha y nombre del boton seleccionado */}
+                        
                         {
-                            BotonOver == items.Titulo ?
-                            <div className="Titulo">
+                            Vista == items.Titu ?
+                            <div className="Titulo" style={{width: '100%'}} onClick={() => alert("dd")}>
                                 <img className="Flecha" src={Flecha} alt="" />
-                                <h1>{items.Titulo}</h1>
+                                <h1 style={{}}>{items.Titulo}</h1>
                             </div>
                             :
                             null
                         }
+                         
                     </div>
                 ))
             }

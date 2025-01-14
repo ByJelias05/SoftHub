@@ -14,6 +14,10 @@
    top: 0;
 }
 
+.Titulo h1{
+    white-space: nowrap;
+}
+
 .Boton-Header{
     display: flex;
     align-items: center;
@@ -21,15 +25,25 @@
 } 
 
 .AddWidth{
+
     display: flex;
     align-items: center;
     width: 100%;
 }
+
+
+
 .null{
     width: 10%;
 }
 
+a{
+    text-decoration: none;
+}
+
 .Icono-Header{
+    width: 68px;
+    height: 68px;
     border: 2px solid #fff;
   
     border-radius: 50vmax;
@@ -38,7 +52,13 @@
     justify-content: center;
     align-items: center;
     
+    transition: 300ms linear ease-in-out;
 }
+
+.Icono-Header:hover{
+    border: none;
+}
+
 
 .Icono-Header img{
     width: 30px;
@@ -103,6 +123,7 @@
 }
 
 .Titulo{
+    width: 100%;
     display: flex;
     margin-left: 25px;
 }

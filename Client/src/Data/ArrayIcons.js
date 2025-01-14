@@ -28,46 +28,55 @@ import IconSettingsLoad from "../Icons/Settings2.png"
 export const ArrayIcons = [
     {
         Titulo: "Explore",
+        Titu: "Explore",
         Icon: IconExplore,
         IconLoad: IconExploreLoad
     },
     {
         Titulo: "Search",
+        Titu: "Search",
         Icon: IconSearch,
         IconLoad: IconSearchLoad
     },
     {
         Titulo: "Messages",
+        Titu: "Messages",
         Icon: IconMessage,
         IconLoad: IconMessageLoad
     },
     {
         Titulo: "Notify",
+        Titu: "Notify",
         Icon: IconNotification,
         IconLoad: IconNotificationLoad
     },
     {
         Titulo: "My panel",
+        Titu: "Mypanel",
         Icon: IconTouchpad,
         IconLoad: IconTouchpadLoad
     },
     {
         Titulo: "New Post",
+        Titu: "NewPost",
         Icon: IconCreate,
         IconLoad: IconCreateLoad
     },
     {
         Titulo: "Activities",
+        Titu: "Activities",
         Icon: IconActivity,
         IconLoad: IconActivityLoad
     },
     {
         Titulo: "My Perfil",
+        Titu: "MyPerfil",
         Icon: IconFoto,
         IconLoad: IconFoto
     },
     {
         Titulo: "Config",
+        Titu: "Config",
         Icon: IconSettings,
         IconLoad: IconSettingsLoad
     }
